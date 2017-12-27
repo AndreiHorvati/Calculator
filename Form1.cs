@@ -39,7 +39,6 @@ namespace Calculator
             estePunct = false;
         }
 
-        //nothing important
         //general button click
         //when the button with digit nr is clicked, call this method
         private void button_Click(object sender, EventArgs e, int nr)
