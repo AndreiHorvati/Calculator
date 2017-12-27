@@ -218,56 +218,44 @@ namespace Calculator
             }
         }
 
+        //metoda pt operatii
+        private void operatii(object sender, EventArgs e, char op)
+        {
+            if (!textBox1.Text.EndsWith("" + op))
+            {
+                estePunct = false;
+                numar1 = numar1 / cate1;
+                textBox1.Text += "" + op;
+                operatie = op;
+            }
+        }
+
         // Adunare
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (!textBox1.Text.EndsWith("+"))
-            {
-                estePunct = false;
-                numar1 = numar1 / cate1;
-                textBox1.Text += "+";
-                operatie = '+';
-            }
+            operatii(sender, e,'+');
         }
 
         // Scadere
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (!textBox1.Text.EndsWith("-"))
-            {
-                estePunct = false;
-                numar1 = numar1 / cate1;
-                textBox1.Text += "-";
-                operatie = '-';
-            }
+            operatii(sender, e,'-');
         }
 
         // Inmultire
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (!textBox1.Text.EndsWith("x"))
-            {
-                estePunct = false;
-                numar1 = numar1 / cate1;
-                textBox1.Text += "x";
-                operatie = 'x';
-            }
+            operatii(sender, e,'x');
         }
 
         // Impartire
 
         private void button13_Click(object sender, EventArgs e)
         {
-            if (!textBox1.Text.EndsWith("/"))
-            {
-                estePunct = false;
-                numar1 = numar1 / cate1;
-                textBox1.Text += "/";
-                operatie = '/';
-            }
+            operatii(sender, e,  '/');
         }
 
         // Buton C
