@@ -90,433 +90,64 @@ namespace Calculator
         // Buton 1
 
         private void button8_Click(object sender, EventArgs e)
-        {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 1;
-                    textBox1.Text += "1";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "1";
-                        numar1 = 1;
-                    }
-                    else
-                    {
-                        textBox1.Text += "1";
-                        numar1 = numar1 * 10 + 1;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 1;
-                    else
-                        numar2 = numar2 * 10 - 1;
-                    textBox1.Text += "1";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "1";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 1;
-                    else
-                        numar1 = numar1 * 10 - 1;
-                }
-            }
+        { 
+            button_Click(sender, e, 1);
         }
 
         // Buton 2
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 2;
-                    textBox1.Text += "2";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "2";
-                        numar1 = 2;
-                    }
-                    else
-                    {
-                        textBox1.Text += "2";
-                        numar1 = numar1 * 10 + 2;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 2;
-                    else
-                        numar2 = numar2 * 10 - 2;
-                    textBox1.Text += "2";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "2";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 2;
-                    else
-                        numar1 = numar1 * 10 - 2;
-                }
-            }
+            button_Click(sender, e, 2);
         }
 
         // Buton 3
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 3;
-                    textBox1.Text += "3";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "3";
-                        numar1 = 3;
-                    }
-                    else
-                    {
-                        textBox1.Text += "3";
-                        numar1 = numar1 * 10 + 3;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 3;
-                    else
-                        numar2 = numar2 * 10 - 3;
-                    textBox1.Text += "3";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "3";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 3;
-                    else
-                        numar1 = numar1 * 10 - 3;
-                }
-            }
+            button_Click(sender, e, 3);
         }
 
         // Buton 4
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 4;
-                    textBox1.Text += "4";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "4";
-                        numar1 = 4;
-                    }
-                    else
-                    {
-                        textBox1.Text += "4";
-                        numar1 = numar1 * 10 + 4;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 4;
-                    else
-                        numar2 = numar2 * 10 - 4;
-                    textBox1.Text += "4";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "4";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 4;
-                    else
-                        numar1 = numar1 * 10 - 4;
-                }
-            }
+            button_Click(sender, e, 4);
         }
 
         // Buton 5
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 5;
-                    textBox1.Text += "5";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "5";
-                        numar1 = 5;
-                    }
-                    else
-                    {
-                        textBox1.Text += "5";
-                        numar1 = numar1 * 10 + 5;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 5;
-                    else
-                        numar2 = numar2 * 10 - 5;
-                    textBox1.Text += "5";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "5";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 5;
-                    else
-                        numar1 = numar1 * 10 - 5;
-                }
-            }
+            button_Click(sender, e, 5);
         }
 
         // Buton 6
 
         private void button10_Click(object sender, EventArgs e)
         {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 6;
-                    textBox1.Text += "6";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "6";
-                        numar1 = 6;
-                    }
-                    else
-                    {
-                        textBox1.Text += "6";
-                        numar1 = numar1 * 10 + 6;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 6;
-                    else
-                        numar2 = numar2 * 10 - 6;
-                    textBox1.Text += "6";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "6";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 6;
-                    else
-                        numar1 = numar1 * 10 - 6;
-                }
-            }
+            button_Click(sender, e, 6);
         }
 
         // Buton 7
 
         private void button16_Click(object sender, EventArgs e)
         {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 7;
-                    textBox1.Text += "7";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "7";
-                        numar1 = 7;
-                    }
-                    else
-                    {
-                        textBox1.Text += "7";
-                        numar1 = numar1 * 10 + 7;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 7;
-                    else
-                        numar2 = numar2 * 10 - 7;
-                    textBox1.Text += "7";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "7";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 7;
-                    else
-                        numar1 = numar1 * 10 - 7;
-                }
-            }
+            button_Click(sender, e, 7);
         }
 
         // Buton 8
 
         private void button15_Click(object sender, EventArgs e)
         {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 8;
-                    textBox1.Text += "8";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "8";
-                        numar1 = 8;
-                    }
-                    else
-                    {
-                        textBox1.Text += "8";
-                        numar1 = numar1 * 10 + 8;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 8;
-                    else
-                        numar2 = numar2 * 10 - 8;
-                    textBox1.Text += "8";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "8";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 8;
-                    else
-                        numar1 = numar1 * 10 - 8;
-                }
-            }
+            button_Click(sender, e, 8);
         }
 
         // Buton 9
 
         private void button14_Click(object sender, EventArgs e)
         {
-            if (estePunct == false)
-            {
-                if (operatie != ' ')
-                {
-                    numar2 = numar2 * 10 + 9;
-                    textBox1.Text += "9";
-                }
-                else
-                {
-                    if (textBox1.Text == "0")
-                    {
-                        textBox1.Text = "9";
-                        numar1 = 9;
-                    }
-                    else
-                    {
-                        textBox1.Text += "9";
-                        numar1 = numar1 * 10 + 9;
-                    }
-                }
-            }
-            else
-            {
-                if (operatie != ' ')
-                {
-                    cate2 *= 10;
-                    if (numar2 >= 0)
-                        numar2 = numar2 * 10 + 9;
-                    else
-                        numar2 = numar2 * 10 - 9;
-                    textBox1.Text += "9";
-                }
-                else
-                {
-                    cate1 *= 10;
-                    textBox1.Text += "9";
-                    if (numar1 >= 0)
-                        numar1 = numar1 * 10 + 9;
-                    else
-                        numar1 = numar1 * 10 - 9;
-                }
-            }
+            button_Click(sender, e, 9);
         }
 
         // Buton 0
